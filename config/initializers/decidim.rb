@@ -3,11 +3,11 @@
 Decidim.configure do |config|
   config.application_name = 'Decidim Sitges App'
 
-  config.mailer_sender = 'decidim@decideix.com'
+  config.mailer_sender = 'informatica@sitges.cat'
 
   # Change these lines to set your preferred locales
   config.default_locale = :ca
-  config.available_locales = %i[ca en es]
+  config.available_locales = %i[ca en es fr de]
 
   config.enable_html_header_snippets = true
   config.track_newsletter_links = true
