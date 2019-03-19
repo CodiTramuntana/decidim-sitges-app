@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = '~> 0.16.0'
+DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.16-stable' }
 
 gem 'daemons'
 gem 'delayed_job_active_record'
@@ -16,6 +16,7 @@ gem 'figaro', '>= 1.1.1'
 gem 'openssl'
 
 gem 'decidim', DECIDIM_VERSION
+gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git', tag: 'v0.0.1'
 
 group :development, :test do
   gem 'better_errors'
