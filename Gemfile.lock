@@ -200,6 +200,15 @@ GIT
     decidim-verifications (0.18.0)
       decidim-core (= 0.18.0)
 
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: c827f33db21d5e1cc86da628d92040d14e8c4d4c
+  tag: 0.18-stable
+  specs:
+    decidim-term_customizer (0.18.0)
+      decidim-admin (~> 0.18.0)
+      decidim-core (~> 0.18.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -768,6 +777,7 @@ DEPENDENCIES
   daemons
   decidim!
   decidim-dev!
+  decidim-term_customizer!
   decidim-verifications-sitges_census!
   delayed_job_active_record
   faker (~> 1.8.4)
