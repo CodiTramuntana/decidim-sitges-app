@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: 'release/0.20-stable' }
+DECIDIM_VERSION = { git: 'https://github.com/CodiTramuntana/decidim.git', branch: 'release/0.21-stable' }
 
 gem 'daemons'
 gem 'delayed_job_active_record'
-gem 'puma', '~> 3.0'
+gem 'puma'
 gem 'uglifier', '>= 1.3.0'
 gem 'whenever'
 
@@ -19,7 +19,7 @@ gem 'ransack'
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git'
-gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.20-stable'
+gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.21-stable'
 
 group :development, :test do
   gem 'better_errors'
