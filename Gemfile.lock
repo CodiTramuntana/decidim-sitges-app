@@ -9,7 +9,7 @@ GIT
       virtus-multiparams
 
 GIT
-  remote: https://github.com/decidim/decidim.git
+  remote: https://github.com/CodiTramuntana/decidim.git
   revision: c52fae50438a218d136d6d0385b62d7e4bc0eef5
   branch: release/0.20-stable
   specs:
@@ -634,7 +634,7 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.1)
-    redis (4.2.5)
+    redis (4.3.1)
     regexp_parser (2.1.1)
     request_store (1.5.0)
       rack (>= 1.4)
@@ -776,7 +776,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    websocket-driver (0.7.4)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     whenever (1.0.0)
