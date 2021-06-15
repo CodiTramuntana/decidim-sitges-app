@@ -1,11 +1,3 @@
-## From 0.19 to 0.20
-
-### Synchronize schema_migrations table
-
-The following are the migrations versions used by clean app. From Decidim version 0 until v0.20.
-Make sure your app uses also this ones before deploying upgrades to version 0.20.
-
-```
 COPY public.schema_migrations (version) FROM stdin;
 20190619145257
 20190619145258
@@ -348,27 +340,4 @@ COPY public.schema_migrations (version) FROM stdin;
 20210610122210
 20210610122211
 20210610122212
-20210610131944
-20210610131945
-20210610131946
-20210610131947
-20210610131948
 \.
-```
-
-
-
-In order for the newly searchable entities to be indexed, you'll have to manually trigger a reindex. You can do that by running in the rails console:
-
-```ruby
-Decidim::Assembly.find_each(&:add_to_index_as_search_resource)
-Decidim::ParticipatoryProcess.find_each(&:add_to_index_as_search_resource)
-Decidim::Conference.find_each(&:add_to_index_as_search_resource)
-Decidim::Consultation.find_each(&:add_to_index_as_search_resource)
-Decidim::Initiative.find_each(&:add_to_index_as_search_resource)
-Decidim::Debates::Debate.find_each(&:add_to_index_as_search_resource)
-# results are ready to be searchable but don't have a card-m so can't be rendered
-# Decidim::Accountability::Result.find_each(&:add_to_index_as_search_resource)
-Decidim::Budgets::Project.find_each(&:add_to_index_as_search_resource)
-Decidim::Blogs::Post.find_each(&:add_to_index_as_search_resource)
-```

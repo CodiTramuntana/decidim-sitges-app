@@ -956,8 +956,8 @@ ActiveRecord::Schema.define(version: 2021_06_10_131948) do
     t.datetime "published_at"
     t.integer "proposal_notes_count", default: 0, null: false
     t.integer "coauthorships_count", default: 0, null: false
-    t.integer "position"
     t.string "participatory_text_level"
+    t.integer "position"
     t.boolean "created_in_meeting", default: false
     t.index "md5(body)", name: "decidim_proposals_proposal_body_search"
     t.index "md5(title)", name: "decidim_proposals_proposal_title_search"
@@ -1268,6 +1268,21 @@ ActiveRecord::Schema.define(version: 2021_06_10_131948) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["decidim_organization_id"], name: "index_verifications_csv_census_to_organization"
+  end
+
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer "priority", default: 0, null: false
+    t.integer "attempts", default: 0, null: false
+    t.text "handler", null: false
+    t.text "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string "locked_by"
+    t.string "queue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|
