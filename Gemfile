@@ -21,8 +21,8 @@ gem 'openssl'
 gem 'ransack', '2.1.1'
 
 gem 'decidim', DECIDIM_VERSION
-gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git', tag: 'v0.0.2'
-gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.19-stable'
+gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git'
+gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.20-stable'
 
 group :development, :test do
   gem 'better_errors'
