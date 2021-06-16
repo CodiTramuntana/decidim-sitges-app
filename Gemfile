@@ -15,14 +15,11 @@ gem 'whenever'
 gem 'figaro', '>= 1.1.1'
 gem 'openssl'
 
-# Force gem version to fix:
-# undefined method `polymorphic?' for ActiveRecord::Reflection::PolymorphicReflection
-# See: https://github.com/activerecord-hackery/ransack/issues/1039
-gem 'ransack', '2.1.1'
+gem 'ransack'
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git'
-gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.20-stable'
+gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.21-stable'
 
 group :development, :test do
   gem 'better_errors'

@@ -209,12 +209,12 @@ GIT
 
 GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
-  revision: 1fb3541203eccc2054853cfc4a7ec158082156d2
-  tag: 0.20-stable
+  revision: b9248e2abd52b77c7454bfefff9b84a97aae7b35
+  tag: 0.21-stable
   specs:
-    decidim-term_customizer (0.20.0)
-      decidim-admin (~> 0.20.0)
-      decidim-core (~> 0.20.0)
+    decidim-term_customizer (0.21.0)
+      decidim-admin (~> 0.21.0)
+      decidim-core (~> 0.21.0)
 
 GEM
   remote: https://rubygems.org/
@@ -816,6 +816,7 @@ DEPENDENCIES
   listen (~> 3.1.0)
   openssl
   puma
+  ransack
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier (>= 1.3.0)
