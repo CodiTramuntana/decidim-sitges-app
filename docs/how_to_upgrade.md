@@ -6,6 +6,10 @@ The following are the migrations versions used by clean app. From Decidim versio
 Make sure your app uses also this ones before deploying upgrades to version 0.20.
 
 ```
+delete from schema_migrations where version <= '20191115085053';
+```
+
+```
 COPY public.schema_migrations (version) FROM stdin;
 20190619145257
 20190619145258
