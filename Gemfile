@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: 'https://github.com/CodiTramuntana/decidim.git', branch: 'release/0.23-stable' }
+DECIDIM_VERSION = { git: 'https://github.com/CodiTramuntana/decidim.git', branch: 'release/0.24-stable' }
 
 gem 'daemons'
 gem 'delayed_job_active_record'
@@ -19,7 +19,7 @@ gem 'ransack'
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-verifications-sitges_census', git: 'https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git'
-gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer', tag: '0.23-stable'
+gem 'decidim-term_customizer', git: 'https://github.com/mainio/decidim-module-term_customizer'
 
 group :development, :test do
   gem 'better_errors'
@@ -29,8 +29,8 @@ end
 
 group :development do
   gem 'decidim-dev', DECIDIM_VERSION
-  gem 'faker', '~> 1.8.4'
-  gem 'letter_opener_web', '~> 1.3.0'
+  gem 'faker'
+  gem 'letter_opener_web'
   gem 'listen', '~> 3.1.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
