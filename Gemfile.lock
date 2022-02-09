@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/CodiTramuntana/decidim-verifications-sitges_census.git
-  revision: 9e10a5a234a2909c178f3bbe58cc694399a354b1
+  revision: e52530dfb3c989dfd5e48533c9c03cb11cfbca03
   specs:
     decidim-verifications-sitges_census (0.0.3)
-      decidim-core (>= 0.24.0)
-      decidim-verifications (>= 0.24.0)
+      decidim-core (<= 0.24.3)
+      decidim-verifications (>= 0.24.3)
       rails (>= 5.2)
       virtus-multiparams
 
@@ -424,7 +424,7 @@ GEM
       rest-client (>= 1.6)
     eventmachine (1.2.7)
     eventmachine_httpserver (0.2.1)
-    excon (0.89.0)
+    excon (0.91.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -467,7 +467,7 @@ GEM
       excon (~> 0.71)
       formatador (~> 0.2)
       mime-types
-    fog-local (0.7.0)
+    fog-local (0.8.0)
       fog-core (>= 1.27, < 3.0)
     formatador (0.3.0)
     foundation-rails (6.6.2.0)
@@ -480,13 +480,13 @@ GEM
       activesupport (>= 4.1, < 6.0)
       railties (>= 4.1, < 6.0)
       tzinfo (~> 1.2, >= 1.2.2)
-    geocoder (1.7.2)
+    geocoder (1.7.3)
     globalid (1.0.0)
       activesupport (>= 5.0)
     graphiql-rails (1.4.11)
       railties
       sprockets-rails
-    graphql (1.13.4)
+    graphql (1.13.8)
     hashdiff (1.0.1)
     hashie (5.0.0)
     highline (2.0.3)
@@ -496,7 +496,7 @@ GEM
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    i18n (1.8.11)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.34)
       activesupport (>= 4.0.2)
@@ -649,7 +649,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
-    rack-attack (6.5.0)
+    rack-attack (6.6.0)
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
@@ -693,7 +693,7 @@ GEM
       activerecord (>= 5.0)
       activesupport (>= 5.0)
       i18n
-    rb-fsevent (0.11.0)
+    rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rectify (0.13.0)
@@ -703,9 +703,9 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.1)
-    redis (4.5.1)
+    redis (4.6.0)
     regexp_parser (2.2.0)
-    request_store (1.5.0)
+    request_store (1.5.1)
       rack (>= 1.4)
     responders (3.0.1)
       actionpack (>= 5.0)
