@@ -218,7 +218,7 @@ GIT
 
 GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
-  revision: c9f127e78bd52b29ee02bc62f252db2634f9a1f0
+  revision: 4b385c55996e390406ac68a8b5ab68b9da2c8817
   specs:
     decidim-term_customizer (0.24.0)
       decidim-admin (~> 0.24.0)
